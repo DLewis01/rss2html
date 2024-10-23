@@ -2,7 +2,7 @@
 
 # Variables
 RSS_URL="https://my.com/all.rss"
-OUTPUT_DIR="/var/www/html/aws"
+OUTPUT_DIR="/var/www/html/rss"
 OUTPUT_FILE="$OUTPUT_DIR/index.html"
 TEMP_FILE="/tmp/aws_status.rss"
 
