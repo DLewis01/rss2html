@@ -8,6 +8,6 @@ change this line to be the rss feed you want to convert
 RSS_URL="https://my.com/all.rss"
 
 Change this line to the directory you want to write the file to.
-OUTPUT_DIR="/var/www/html/aws"
+OUTPUT_DIR="/var/www/html/rss"
 
 If you want it to run at a specific time, call it from a cron job.
