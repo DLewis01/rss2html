@@ -2,12 +2,15 @@
 
 # Variables
 DEBUG=0
-RSS_URL="https://my.com/all.rss"
-OUTPUT_DIR="/var/www/html/rss"
-OUTPUT_FILE="$OUTPUT_DIR/index.html"
-TEMP_FILE="/tmp/my_status.rss"
+RSS_URL="https://my.com/my.rss" #i.e. http://online.wsj.com/xml/rss/3_7011.xml
+OUTPUT_DIR="/var/www/html/rss"  #maybe a webdirectory to turn it into a html page, or /tmp if you want it for other purposes.
 
-:wqBODY_OUTPUT_FILE="./aws_include.inc"
+#dont modify these
+OUTPUT_FILE="$OUTPUT_DIR/index.html"
+RSS_FILE="${RSS_URL##*/}"  #will output the my.rss part of $RSS_URL
+TEMP_FILE="/tmp/$RSS_FILE"
+
+BODY_OUTPUT_FILE="./rss_include.inc"
 TEMP_FILE="/tmp/rss_status.rss"
 has_items=0  # Flag to track if any items were found
 
